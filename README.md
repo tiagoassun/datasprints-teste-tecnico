@@ -23,4 +23,4 @@ Como se trata no final das contas de um Jupyter Notebook, é possével utilizar 
 > ```!apt-get install [nome do pacote]```
 
 
-Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/github/tiagoassun/datasprints-teste-tecnico/blob/master/datasprints_teste_tecnico.ipynb)
+Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/drive/1jQ8l0p3irrfhwJOCRr-5i60SYhdQxZmK)
