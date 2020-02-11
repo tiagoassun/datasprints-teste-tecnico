@@ -57,17 +57,37 @@ drive.mount('/content/drive/')
 
 Quando o comando para mapear o diretório for executado serão solicitadas as credenciais do usuário, como é possível observar nas imagens abaixo:
 
--- Add imagem
+> O Colab irá lhe pedir para inserir um código de autorização, para isso clique no link sublinhado em vermelho na imagem.
+![1](https://raw.githubusercontent.com/tiagoassun/datasprints-teste-tecnico/master/images-readme/1.png)
+
+> Após isso selecione a conta onde estão seus arquivos do Google Drive.
+![2](https://raw.githubusercontent.com/tiagoassun/datasprints-teste-tecnico/master/images-readme/2.png)
+
+> Aceite as permissões de acesso que o Colab solicita.
+![3](https://raw.githubusercontent.com/tiagoassun/datasprints-teste-tecnico/master/images-readme/3.png)
+
+> Copie o código de autorização que irá aparecer.
+![4](https://raw.githubusercontent.com/tiagoassun/datasprints-teste-tecnico/master/images-readme/4.png)
+
+> Cole o código de autorização.
+![5](https://raw.githubusercontent.com/tiagoassun/datasprints-teste-tecnico/master/images-readme/5.png)
+
+> Se a mensagem sublinhada em vermlho foi axibida, então deu tudo certo.
+![6](https://raw.githubusercontent.com/tiagoassun/datasprints-teste-tecnico/master/images-readme/6.png)
 
 Após a confirmação de credenciais o ```drive.mount``` irá montar o diretório raiz do Google Drive no Linux do Colab.
 
-Por padrão o Google Colab define como diretório de armazenamento de arquivo o diretório ```/content/```. E se será dentro deste diretório que a raiz do Google Drive será mapeada, como no comando de montagem da pasta foi passado o diretório ```/content/drive/```, será dentro de ```/drive/``` que a pasta realmente mapeada, como é possível verificar na imagem abaixo:
+Por padrão o Google Colab define como diretório de armazenamento de arquivo o diretório ```/content/```. E se será dentro deste diretório que a raiz do Google Drive será mapeada, como no comando de montagem da pasta foi passado o diretório ```/content/drive/```, será dentro de ```/drive/``` que a pasta realmente mapeada, como é possível verificar nas imagens abaixo:
 
--- Add imagem
+> O deretório sublinhado em vermelho é o mapeamento do Google Drive.
+![6](https://raw.githubusercontent.com/tiagoassun/datasprints-teste-tecnico/master/images-readme/7.png)
+
+> É possível andar pelo diretório normalmente.
+![6](https://raw.githubusercontent.com/tiagoassun/datasprints-teste-tecnico/master/images-readme/8.png)
 
 O nome da pasta raiz do Google Drive é ```My Drive```, pois é assim que o Google Drive nomeia sua pasta raiz, como é possível verificar na imagem abaixo:
 
--- Add imagem
+![](https://raw.githubusercontent.com/tiagoassun/datasprints-teste-tecnico/master/images-readme/9.png)
 
 Após isso só necessário colocar os arquivos no seu Google Drive e utilizar um comando de leitura de arquivos em Python passando o caminho do arquivo no Google Drive, como por exemplo:
 
