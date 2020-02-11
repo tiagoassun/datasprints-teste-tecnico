@@ -10,7 +10,7 @@ Nele é possível escrever e executar códigos em Python, salvar e compartilhar 
 
 Como se trata no final das contas de um Jupyter Notebook, é possével utilizar os comando do Jupyter Notebook.
 
-* Os comandos de bash podem ser executados prefixando o comando com “!”.
+* Os comandos de bash podem ser executados prefixando o comando com ```“!”```.
 
 > ```!git clone [git clone url]```
 
