@@ -1,5 +1,6 @@
 # Teste Técnico de Engenharia de Dados
 
+> **Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/drive/1jQ8l0p3irrfhwJOCRr-5i60SYhdQxZmK)**
 
 ## Google Colaboratory (Google Colab)
 Todo o teste foi feito utilizando o ambiente Google Colab. 
