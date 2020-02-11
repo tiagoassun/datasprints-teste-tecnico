@@ -12,18 +12,32 @@ Como se trata no final das contas de um Jupyter Notebook, é possével utilizar 
 
 * Os comandos de bash podem ser executados prefixando o comando com ```“!”```.
 
-> ```!git clone [git clone url]```
+```bash
+!git clone https://github.com/tiagoassun/datasprints-teste-tecnico.git
+```
 
-> ```!ls```
+~~~bash
+!ls -la
+~~~
 
-> ```!wget [url] -p drive/[nome da pasta]```
+~~~bash
+!wget -q https://archive.apache.org/dist/spark/spark-2.4.4/spark-2.4.4-bin-hadoop2.7.tgz
+~~~
 
-> ```!pip install [nome do pacote]```
+~~~bash
+!tar xf spark-2.4.4-bin-hadoop2.7.tgz
+~~~
 
-> ```!apt-get install [nome do pacote]```
+~~~bash
+!pip install -q findspark
+~~~
+
+~~~bash
+!apt-get install openjdk-8-jdk-headless -qq > /dev/null
+~~~
 
 
-**Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/drive/1jQ8l0p3irrfhwJOCRr-5i60SYhdQxZmK)**
+> **Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/drive/1jQ8l0p3irrfhwJOCRr-5i60SYhdQxZmK)**
 
 
 
@@ -31,11 +45,15 @@ Como se trata no final das contas de um Jupyter Notebook, é possével utilizar 
 
 Para importar os arquivos será necessário mapear a raiz do Google Drive em uma pasta no Linux do Google Colab. Para isso iremos utilizar uma biblioteca especifica:
 
-> ```from google.colab import drive```
+~~~python
+from google.colab import drive
+~~~
 
 E para efetivamente montar a pasta no Linux:
 
-> ```drive.mount('/content/drive/')```
+~~~python
+drive.mount('/content/drive/')
+~~~
 
 Quando o comando para mapear o diretório for executado serão solicitadas as credenciais do usuário, como é possível observar nas imagens abaixo:
 
@@ -53,9 +71,11 @@ O nome da pasta raiz do Google Drive é ```My Drive```, pois é assim que o Goog
 
 Após isso só necessário colocar os arquivos no seu Google Drive e utilizar um comando de leitura de arquivos em Python passando o caminho do arquivo no Google Drive, como por exemplo:
 
-> ```df_trips = spark.read.json("drive/My Drive/datasets/processos-seletivos/datasprints/trips/*.json")```
+~~~python
+df_trips = spark.read.json("drive/My Drive/datasets/processos-seletivos/datasprints/trips/*.json")
+~~~
 
-**Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/drive/1jQ8l0p3irrfhwJOCRr-5i60SYhdQxZmK)**
+> **Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/drive/1jQ8l0p3irrfhwJOCRr-5i60SYhdQxZmK)**
 
 ## Links de downloads dos datasets
 
@@ -72,4 +92,4 @@ _Trips_ : dados sobre corridas de táxi em Nova York
 
 [Payment Lookup](https://s3.amazonaws.com/data-sprints-eng-test/data-payment_lookup-csv.csv): mapa entre prefixos e os tipos reais de pagamento
 
-**Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/drive/1jQ8l0p3irrfhwJOCRr-5i60SYhdQxZmK)**
+> **Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/drive/1jQ8l0p3irrfhwJOCRr-5i60SYhdQxZmK)**
