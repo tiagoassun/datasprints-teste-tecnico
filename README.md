@@ -25,7 +25,9 @@ Como se trata no final das contas de um Jupyter Notebook, é possével utilizar 
 
 Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/drive/1jQ8l0p3irrfhwJOCRr-5i60SYhdQxZmK)
 
-### Conexão com o Google Driver
+
+
+## Conexão com o Google Driver
 
 Para importar os arquivos será necessário mapear a raiz do Google Drive em uma pasta no Linux do Google Colab. Para isso iremos utilizar uma biblioteca especifica:
 
@@ -52,3 +54,20 @@ O nome da pasta raiz do Google Drive é ```My Drive```, pois é assim que o Goog
 Após isso só necessário colocar os arquivos no seu Google Drive e utilizar um comando de leitura de arquivos em Python passando o caminho do arquivo no Google Drive, como por exemplo:
 
 > ```df_trips = spark.read.json("drive/My Drive/datasets/processos-seletivos/datasprints/trips/*.json")```
+
+
+
+## Links de downloads dos datasets
+
+_Trips_ : dados sobre corridas de táxi em Nova York
+- [Trip 1 - 2009](https://s3.amazonaws.com/data-sprints-eng-test/data-sample_data-nyctaxi-trips-2009-json_corrigido.json)
+
+- [Trip 2 - 2010](https://s3.amazonaws.com/data-sprints-eng-test/data-sample_data-nyctaxi-trips-2010-json_corrigido.json)
+
+- [Trip 3 - 2011](https://s3.amazonaws.com/data-sprints-eng-test/data-sample_data-nyctaxi-trips-2011-json_corrigido.json)
+
+- [Trip 4 - 2012](https://s3.amazonaws.com/data-sprints-eng-test/data-sample_data-nyctaxi-trips-2012-json_corrigido.json)
+
+[Vendor Lookup](https://s3.amazonaws.com/data-sprints-eng-test/data-vendor_lookup-csv.csv): dados sobre empresas de serviços de táxi
+
+[Payment Lookup](https://s3.amazonaws.com/data-sprints-eng-test/data-payment_lookup-csv.csv): mapa entre prefixos e os tipos reais de pagamento
