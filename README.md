@@ -23,7 +23,7 @@ Como se trata no final das contas de um Jupyter Notebook, é possével utilizar 
 > ```!apt-get install [nome do pacote]```
 
 
-Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/drive/1jQ8l0p3irrfhwJOCRr-5i60SYhdQxZmK)
+**Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/drive/1jQ8l0p3irrfhwJOCRr-5i60SYhdQxZmK)**
 
 
 
@@ -55,7 +55,7 @@ Após isso só necessário colocar os arquivos no seu Google Drive e utilizar um
 
 > ```df_trips = spark.read.json("drive/My Drive/datasets/processos-seletivos/datasprints/trips/*.json")```
 
-Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/drive/1jQ8l0p3irrfhwJOCRr-5i60SYhdQxZmK)
+**Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/drive/1jQ8l0p3irrfhwJOCRr-5i60SYhdQxZmK)**
 
 ## Links de downloads dos datasets
 
@@ -72,4 +72,4 @@ _Trips_ : dados sobre corridas de táxi em Nova York
 
 [Payment Lookup](https://s3.amazonaws.com/data-sprints-eng-test/data-payment_lookup-csv.csv): mapa entre prefixos e os tipos reais de pagamento
 
-Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/drive/1jQ8l0p3irrfhwJOCRr-5i60SYhdQxZmK)
+**Para abrir o código diretamente no Google Colab por favor [clique aqui.](https://colab.research.google.com/drive/1jQ8l0p3irrfhwJOCRr-5i60SYhdQxZmK)**
