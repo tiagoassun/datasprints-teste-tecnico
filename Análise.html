@@ -13090,7 +13090,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Instalar as dependências</span>
@@ -13108,7 +13108,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Baixando bibliotecas</span>
@@ -13132,62 +13132,40 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Collecting pyspark[sql]
-  Downloading https://files.pythonhosted.org/packages/9a/5a/271c416c1c2185b6cb0151b29a91fff6fcaed80173c8584ff6d20e46b465/pyspark-2.4.5.tar.gz (217.8MB)
-     |████████████████████████████████| 217.8MB 62kB/s 
-Collecting py4j==0.10.7
-  Downloading https://files.pythonhosted.org/packages/e3/53/c737818eb9a7dc32a7cd4f1396e787bd94200c3997c72c1dbe028587bd76/py4j-0.10.7-py2.py3-none-any.whl (197kB)
-     |████████████████████████████████| 204kB 44.4MB/s 
-Requirement already satisfied: pandas&gt;=0.19.2 in /usr/local/lib/python3.6/dist-packages (from pyspark[sql]) (0.25.3)
-Requirement already satisfied: pyarrow&gt;=0.8.0 in /usr/local/lib/python3.6/dist-packages (from pyspark[sql]) (0.14.1)
-Requirement already satisfied: python-dateutil&gt;=2.6.1 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.19.2-&gt;pyspark[sql]) (2.6.1)
-Requirement already satisfied: numpy&gt;=1.13.3 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.19.2-&gt;pyspark[sql]) (1.17.5)
-Requirement already satisfied: pytz&gt;=2017.2 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.19.2-&gt;pyspark[sql]) (2018.9)
-Requirement already satisfied: six&gt;=1.0.0 in /usr/local/lib/python3.6/dist-packages (from pyarrow&gt;=0.8.0-&gt;pyspark[sql]) (1.12.0)
-Building wheels for collected packages: pyspark
-  Building wheel for pyspark (setup.py) ... done
-  Created wheel for pyspark: filename=pyspark-2.4.5-py2.py3-none-any.whl size=218257927 sha256=670e0a4c0d7535ed5f890bf1bbb0d0998fcad6213675040ef59aa68fe104152e
-  Stored in directory: /root/.cache/pip/wheels/bf/db/04/61d66a5939364e756eb1c1be4ec5bdce6e04047fc7929a3c3c
-Successfully built pyspark
-Installing collected packages: py4j, pyspark
-Successfully installed py4j-0.10.7 pyspark-2.4.5
+<pre>Requirement already satisfied: pyspark[sql] in /usr/local/lib/python3.6/dist-packages (2.4.5)
+Requirement already satisfied: py4j==0.10.7 in /usr/local/lib/python3.6/dist-packages (from pyspark[sql]) (0.10.7)
+Requirement already satisfied: pyarrow&gt;=0.8.0; extra == &#34;sql&#34; in /usr/local/lib/python3.6/dist-packages (from pyspark[sql]) (0.14.1)
+Requirement already satisfied: pandas&gt;=0.19.2; extra == &#34;sql&#34; in /usr/local/lib/python3.6/dist-packages (from pyspark[sql]) (0.25.3)
+Requirement already satisfied: numpy&gt;=1.14 in /usr/local/lib/python3.6/dist-packages (from pyarrow&gt;=0.8.0; extra == &#34;sql&#34;-&gt;pyspark[sql]) (1.17.5)
+Requirement already satisfied: six&gt;=1.0.0 in /usr/local/lib/python3.6/dist-packages (from pyarrow&gt;=0.8.0; extra == &#34;sql&#34;-&gt;pyspark[sql]) (1.12.0)
+Requirement already satisfied: python-dateutil&gt;=2.6.1 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.19.2; extra == &#34;sql&#34;-&gt;pyspark[sql]) (2.6.1)
+Requirement already satisfied: pytz&gt;=2017.2 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.19.2; extra == &#34;sql&#34;-&gt;pyspark[sql]) (2018.9)
 Requirement already satisfied: seaborn in /usr/local/lib/python3.6/dist-packages (0.10.0)
-Requirement already satisfied: pandas&gt;=0.22.0 in /usr/local/lib/python3.6/dist-packages (from seaborn) (0.25.3)
 Requirement already satisfied: numpy&gt;=1.13.3 in /usr/local/lib/python3.6/dist-packages (from seaborn) (1.17.5)
 Requirement already satisfied: scipy&gt;=1.0.1 in /usr/local/lib/python3.6/dist-packages (from seaborn) (1.4.1)
 Requirement already satisfied: matplotlib&gt;=2.1.2 in /usr/local/lib/python3.6/dist-packages (from seaborn) (3.1.3)
-Requirement already satisfied: pytz&gt;=2017.2 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.22.0-&gt;seaborn) (2018.9)
-Requirement already satisfied: python-dateutil&gt;=2.6.1 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.22.0-&gt;seaborn) (2.6.1)
+Requirement already satisfied: pandas&gt;=0.22.0 in /usr/local/lib/python3.6/dist-packages (from seaborn) (0.25.3)
 Requirement already satisfied: kiwisolver&gt;=1.0.1 in /usr/local/lib/python3.6/dist-packages (from matplotlib&gt;=2.1.2-&gt;seaborn) (1.1.0)
 Requirement already satisfied: cycler&gt;=0.10 in /usr/local/lib/python3.6/dist-packages (from matplotlib&gt;=2.1.2-&gt;seaborn) (0.10.0)
 Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,&gt;=2.0.1 in /usr/local/lib/python3.6/dist-packages (from matplotlib&gt;=2.1.2-&gt;seaborn) (2.4.6)
-Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.6/dist-packages (from python-dateutil&gt;=2.6.1-&gt;pandas&gt;=0.22.0-&gt;seaborn) (1.12.0)
+Requirement already satisfied: python-dateutil&gt;=2.1 in /usr/local/lib/python3.6/dist-packages (from matplotlib&gt;=2.1.2-&gt;seaborn) (2.6.1)
+Requirement already satisfied: pytz&gt;=2017.2 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.22.0-&gt;seaborn) (2018.9)
 Requirement already satisfied: setuptools in /usr/local/lib/python3.6/dist-packages (from kiwisolver&gt;=1.0.1-&gt;matplotlib&gt;=2.1.2-&gt;seaborn) (45.1.0)
-Collecting geopandas
-  Downloading https://files.pythonhosted.org/packages/52/4f/6440a63c9367d981a91de458467eed4a8e259a26f24158071b610a1ed1dd/geopandas-0.6.3-py2.py3-none-any.whl (920kB)
-     |████████████████████████████████| 921kB 2.9MB/s 
-Collecting fiona
-  Downloading https://files.pythonhosted.org/packages/50/f7/9899f8a9a2e38601472fe1079ce5088f58833221c8b8507d8b5eafd5404a/Fiona-1.8.13-cp36-cp36m-manylinux1_x86_64.whl (11.8MB)
-     |████████████████████████████████| 11.8MB 17.4MB/s 
-Collecting pyproj
-  Downloading https://files.pythonhosted.org/packages/d6/70/eedc98cd52b86de24a1589c762612a98bea26cde649ffdd60c1db396cce8/pyproj-2.4.2.post1-cp36-cp36m-manylinux2010_x86_64.whl (10.1MB)
-     |████████████████████████████████| 10.1MB 27.2MB/s 
-Requirement already satisfied: shapely in /usr/local/lib/python3.6/dist-packages (from geopandas) (1.7.0)
+Requirement already satisfied: six in /usr/local/lib/python3.6/dist-packages (from cycler&gt;=0.10-&gt;matplotlib&gt;=2.1.2-&gt;seaborn) (1.12.0)
+Requirement already satisfied: geopandas in /usr/local/lib/python3.6/dist-packages (0.6.3)
 Requirement already satisfied: pandas&gt;=0.23.0 in /usr/local/lib/python3.6/dist-packages (from geopandas) (0.25.3)
-Requirement already satisfied: six&gt;=1.7 in /usr/local/lib/python3.6/dist-packages (from fiona-&gt;geopandas) (1.12.0)
-Collecting munch
-  Downloading https://files.pythonhosted.org/packages/cc/ab/85d8da5c9a45e072301beb37ad7f833cd344e04c817d97e0cc75681d248f/munch-2.5.0-py2.py3-none-any.whl
-Collecting click-plugins&gt;=1.0
-  Downloading https://files.pythonhosted.org/packages/e9/da/824b92d9942f4e472702488857914bdd50f73021efea15b4cad9aca8ecef/click_plugins-1.1.1-py2.py3-none-any.whl
-Requirement already satisfied: click&lt;8,&gt;=4.0 in /usr/local/lib/python3.6/dist-packages (from fiona-&gt;geopandas) (7.0)
-Requirement already satisfied: attrs&gt;=17 in /usr/local/lib/python3.6/dist-packages (from fiona-&gt;geopandas) (19.3.0)
-Collecting cligj&gt;=0.5
-  Downloading https://files.pythonhosted.org/packages/e4/be/30a58b4b0733850280d01f8bd132591b4668ed5c7046761098d665ac2174/cligj-0.5.0-py3-none-any.whl
+Requirement already satisfied: pyproj in /usr/local/lib/python3.6/dist-packages (from geopandas) (2.4.2.post1)
+Requirement already satisfied: fiona in /usr/local/lib/python3.6/dist-packages (from geopandas) (1.8.13)
+Requirement already satisfied: shapely in /usr/local/lib/python3.6/dist-packages (from geopandas) (1.7.0)
+Requirement already satisfied: numpy&gt;=1.13.3 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.23.0-&gt;geopandas) (1.17.5)
 Requirement already satisfied: pytz&gt;=2017.2 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.23.0-&gt;geopandas) (2018.9)
 Requirement already satisfied: python-dateutil&gt;=2.6.1 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.23.0-&gt;geopandas) (2.6.1)
-Requirement already satisfied: numpy&gt;=1.13.3 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.23.0-&gt;geopandas) (1.17.5)
-Installing collected packages: munch, click-plugins, cligj, fiona, pyproj, geopandas
-Successfully installed click-plugins-1.1.1 cligj-0.5.0 fiona-1.8.13 geopandas-0.6.3 munch-2.5.0 pyproj-2.4.2.post1
+Requirement already satisfied: click-plugins&gt;=1.0 in /usr/local/lib/python3.6/dist-packages (from fiona-&gt;geopandas) (1.1.1)
+Requirement already satisfied: six&gt;=1.7 in /usr/local/lib/python3.6/dist-packages (from fiona-&gt;geopandas) (1.12.0)
+Requirement already satisfied: munch in /usr/local/lib/python3.6/dist-packages (from fiona-&gt;geopandas) (2.5.0)
+Requirement already satisfied: click&lt;8,&gt;=4.0 in /usr/local/lib/python3.6/dist-packages (from fiona-&gt;geopandas) (7.0)
+Requirement already satisfied: cligj&gt;=0.5 in /usr/local/lib/python3.6/dist-packages (from fiona-&gt;geopandas) (0.5.0)
+Requirement already satisfied: attrs&gt;=17 in /usr/local/lib/python3.6/dist-packages (from fiona-&gt;geopandas) (19.3.0)
 </pre>
 </div>
 </div>
@@ -13198,7 +13176,7 @@ Successfully installed click-plugins-1.1.1 cligj-0.5.0 fiona-1.8.13 geopandas-0.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Configurar as variáveis de ambiente do Linux que o Google Colab rodar em cima</span>
@@ -13214,7 +13192,7 @@ Successfully installed click-plugins-1.1.1 cligj-0.5.0 fiona-1.8.13 geopandas-0.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Tornar o pyspark &quot;importável&quot;</span>
@@ -13254,7 +13232,7 @@ Successfully installed click-plugins-1.1.1 cligj-0.5.0 fiona-1.8.13 geopandas-0.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Criando conexão com o Google Drive da conta que está utilizando o Google Colab</span>
@@ -13276,11 +13254,7 @@ Successfully installed click-plugins-1.1.1 cligj-0.5.0 fiona-1.8.13 geopandas-0.
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Go to this URL in a browser: https://accounts.google.com/o/oauth2/auth?client_id=947318989803-6bn6qk8qdgf4n4g3pfee6491hc0brc4i.apps.googleusercontent.com&amp;redirect_uri=urn%3aietf%3awg%3aoauth%3a2.0%3aoob&amp;response_type=code&amp;scope=email%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdocs.test%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdrive%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdrive.photos.readonly%20https%3a%2f%2fwww.googleapis.com%2fauth%2fpeopleapi.readonly
-
-Enter your authorization code:
-··········
-Mounted at /content/drive/
+<pre>Drive already mounted at /content/drive/; to attempt to forcibly remount, call drive.mount(&#34;/content/drive/&#34;, force_remount=True).
 </pre>
 </div>
 </div>
@@ -13291,7 +13265,7 @@ Mounted at /content/drive/
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Trips</span>
@@ -13305,7 +13279,7 @@ Mounted at /content/drive/
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Vendor</span>
@@ -13323,13 +13297,13 @@ Mounted at /content/drive/
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1---Qual-a-dist&#226;ncia-m&#233;dia-percorrida-por-viagens-com-no-m&#225;ximo-2-passageiros;">1 - Qual a dist&#226;ncia m&#233;dia percorrida por viagens com no m&#225;ximo 2 passageiros;<a class="anchor-link" href="#1---Qual-a-dist&#226;ncia-m&#233;dia-percorrida-por-viagens-com-no-m&#225;ximo-2-passageiros;">&#182;</a></h2>
+<h2 id="1---Qual-a-dist&#226;ncia-m&#233;dia-percorrida-por-viagens-com-no-m&#225;ximo-2-passageiros.">1 - Qual a dist&#226;ncia m&#233;dia percorrida por viagens com no m&#225;ximo 2 passageiros.<a class="anchor-link" href="#1---Qual-a-dist&#226;ncia-m&#233;dia-percorrida-por-viagens-com-no-m&#225;ximo-2-passageiros.">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cria uma tabela temporaria para que assim seja possível utilizar a sintaxe de SQL ANSI</span>
@@ -13375,13 +13349,13 @@ Mounted at /content/drive/
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2---Quais-os-3-maiores-vendors-em-quantidade-total-de-dinheiro-arrecadado;">2 - Quais os 3 maiores vendors em quantidade total de dinheiro arrecadado;<a class="anchor-link" href="#2---Quais-os-3-maiores-vendors-em-quantidade-total-de-dinheiro-arrecadado;">&#182;</a></h2>
+<h2 id="2---Quais-os-3-maiores-vendors-em-quantidade-total-de-dinheiro-arrecadado.">2 - Quais os 3 maiores vendors em quantidade total de dinheiro arrecadado.<a class="anchor-link" href="#2---Quais-os-3-maiores-vendors-em-quantidade-total-de-dinheiro-arrecadado.">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Importando para conversar números para decimal</span>
@@ -13448,13 +13422,13 @@ Mounted at /content/drive/
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3---Fa&#231;a-um-histograma-da-distribui&#231;&#227;o-mensal,-nos-4-anos,-de-corridas-pagas-em-dinheiro;">3 - Fa&#231;a um histograma da distribui&#231;&#227;o mensal, nos 4 anos, de corridas pagas em dinheiro;<a class="anchor-link" href="#3---Fa&#231;a-um-histograma-da-distribui&#231;&#227;o-mensal,-nos-4-anos,-de-corridas-pagas-em-dinheiro;">&#182;</a></h2>
+<h2 id="3---Fa&#231;a-um-histograma-da-distribui&#231;&#227;o-mensal,-nos-4-anos,-de-corridas-pagas-em-dinheiro.">3 - Fa&#231;a um histograma da distribui&#231;&#227;o mensal, nos 4 anos, de corridas pagas em dinheiro.<a class="anchor-link" href="#3---Fa&#231;a-um-histograma-da-distribui&#231;&#227;o-mensal,-nos-4-anos,-de-corridas-pagas-em-dinheiro.">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13513,13 +13487,13 @@ Mounted at /content/drive/
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+    <div class="prompt output_prompt">Out[0]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f88d08d2390&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7fcdd41922b0&gt;</pre>
 </div>
 
 </div>
@@ -13651,7 +13625,7 @@ PwYuA/4fg1/A2/uH3Eh+r1jaX164liR1ebpJktRlSEiSugwJSVKXISFJ6jIkJEldhoQkqcuQkCR1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13670,13 +13644,8 @@ PwYuA/4fg1/A2/uH3Eh+r1jaX164liR1ebpJktRlSEiSugwJSVKXISFJ6jIkJEldhoQkqcuQkCR1
 <span class="c1"># Transformando um Datafram Spark em um Datafram Pandas</span>
 <span class="n">df_pandas_dia</span> <span class="o">=</span> <span class="n">df_hist_distri_dia</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
 
-<span class="c1"># Trocando todos os valores &quot;Cash&quot; por &quot;CASH&quot; na coluna &quot;payment_type&quot;</span>
-<span class="n">df_pandas_dia</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df_pandas_dia</span><span class="o">.</span><span class="n">payment_type</span> <span class="o">==</span> <span class="s1">&#39;Cash&#39;</span><span class="p">),</span><span class="s1">&#39;payment_type&#39;</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;CASH&#39;</span>
-
 <span class="c1"># Convertendo colunas para &quot;datetime&quot;</span>
 <span class="n">df_pandas_dia</span><span class="p">[</span><span class="s2">&quot;dias&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_pandas_dia</span><span class="p">[</span><span class="s2">&quot;dias&quot;</span><span class="p">])</span>
-<span class="n">df_pandas_dia</span><span class="p">[</span><span class="s2">&quot;dropoff_datetime&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_pandas_dia</span><span class="p">[</span><span class="s2">&quot;dropoff_datetime&quot;</span><span class="p">])</span>
-<span class="n">df_pandas_dia</span><span class="p">[</span><span class="s2">&quot;pickup_datetime&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_pandas_dia</span><span class="p">[</span><span class="s2">&quot;pickup_datetime&quot;</span><span class="p">])</span>
 
 <span class="c1"># Pegando dados dos ultimos 3 meses</span>
 <span class="n">df_pandas_dias_tres_meses</span> <span class="o">=</span> <span class="n">df_pandas_dia</span><span class="p">[</span><span class="n">df_pandas_dia</span><span class="p">[</span><span class="s2">&quot;dias&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="s1">&#39;2012-09-30&#39;</span><span class="p">]</span>
@@ -14156,6 +14125,101 @@ CCGEEEIIIYQQQgghRoQamIUQQgghhBBCCCGEEEKMiP8HQwW/8jUz2OQAAAAASUVORK5CYII=
 >
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="5---Qual-o-tempo-m&#233;dio-das-corridas-nos-dias-de-s&#225;bado-e-domingo.">5 - Qual o tempo m&#233;dio das corridas nos dias de s&#225;bado e domingo.<a class="anchor-link" href="#5---Qual-o-tempo-m&#233;dio-das-corridas-nos-dias-de-s&#225;bado-e-domingo.">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="k">import</span> <span class="n">datetime</span> <span class="k">as</span> <span class="n">dt</span>
+
+<span class="c1"># Criando uma tabela temporaria para que assim seja possível utilizar a sintaxe de SQL ANSI</span>
+<span class="n">df_trips</span><span class="o">.</span><span class="n">registerTempTable</span><span class="p">(</span><span class="s2">&quot;tb_trips&quot;</span><span class="p">)</span>
+
+<span class="n">consulta_sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT tb_trips.*, SUBSTRING(dropoff_datetime, 1, 10) dias</span>
+<span class="s2">FROM tb_trips&quot;&quot;&quot;</span>
+
+<span class="c1"># Fazendo a consulta SQL pelo Spark</span>
+<span class="n">df_fim_semana</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="n">consulta_sql</span><span class="p">)</span>
+
+<span class="c1"># Transformando um Datafram Spark em um Datafram Pandas</span>
+<span class="n">df_pandas_fim_semana</span> <span class="o">=</span> <span class="n">df_fim_semana</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
+
+<span class="c1"># Convertendo colunas para &quot;datetime&quot;</span>
+<span class="n">df_pandas_fim_semana</span><span class="p">[</span><span class="s2">&quot;dias&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_pandas_fim_semana</span><span class="p">[</span><span class="s2">&quot;dias&quot;</span><span class="p">])</span>
+
+<span class="c1"># Criando lista com nomes dos dias da semana</span>
+<span class="n">nomes_semana</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;DOM&quot;</span><span class="p">,</span> <span class="s2">&quot;SEG&quot;</span><span class="p">,</span> <span class="s2">&quot;TER&quot;</span><span class="p">,</span> <span class="s2">&quot;QUA&quot;</span><span class="p">,</span> <span class="s2">&quot;QUI&quot;</span><span class="p">,</span> <span class="s2">&quot;SEX&quot;</span><span class="p">,</span> <span class="s2">&quot;SAB&quot;</span><span class="p">]</span>
+
+<span class="c1"># Pega a data, por exemplo &quot;2009-04-21&quot;, e nessa data é aplicado o &quot;strftime(&quot;%w&quot;)&quot;.</span>
+<span class="c1"># Essa função retorna numeros de 0 a 6, sendo que 0 representa o domingo, 1 representa a segunda e assim por diante.</span>
+<span class="c1"># Então aplicando esse numero retornado pela função na lista definada previamente, é possível retornar da lista o nome do dia da semana de forma correta.</span>
+<span class="c1"># Aplicando isso com o &quot;apply&quot; em uma função &quot;lambda&quot; eu consigo fazer isso para todos os registros da coluna &quot;dias&quot; e jogar o resultado na coluna &quot;dia&quot;.</span>
+<span class="c1"># df_pandas_fim_semana[&quot;dia&quot;] = df_pandas_fim_semana[&#39;dias&#39;].apply(lambda x: x.strftime(&#39;%w&#39;))</span>
+<span class="n">df_pandas_fim_semana</span><span class="p">[</span><span class="s2">&quot;dia&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_pandas_fim_semana</span><span class="p">[</span><span class="s1">&#39;dias&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">nomes_semana</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%w&quot;</span><span class="p">))])</span>
+
+<span class="c1"># Pegando dados de sabádo e domingo</span>
+<span class="n">df_pandas_fim_semana</span> <span class="o">=</span> <span class="n">df_pandas_fim_semana</span><span class="p">[</span><span class="n">df_pandas_fim_semana</span><span class="p">[</span><span class="s2">&quot;dia&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;SAB&#39;</span><span class="p">,</span> <span class="s1">&#39;DOM&#39;</span><span class="p">])]</span>
+
+<span class="c1"># Convertendo colunas para &quot;datetime&quot;</span>
+<span class="n">df_pandas_fim_semana</span><span class="p">[</span><span class="s2">&quot;dropoff_datetime&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_pandas_fim_semana</span><span class="p">[</span><span class="s2">&quot;dropoff_datetime&quot;</span><span class="p">])</span>
+<span class="n">df_pandas_fim_semana</span><span class="p">[</span><span class="s2">&quot;pickup_datetime&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_pandas_fim_semana</span><span class="p">[</span><span class="s2">&quot;pickup_datetime&quot;</span><span class="p">])</span>
+
+<span class="c1"># Pegando tempo das corridas</span>
+<span class="n">df_pandas_fim_semana</span><span class="p">[</span><span class="s1">&#39;temp_corrida&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_pandas_fim_semana</span><span class="p">[</span><span class="s1">&#39;dropoff_datetime&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df_pandas_fim_semana</span><span class="p">[</span><span class="s1">&#39;pickup_datetime&#39;</span><span class="p">]</span>
+
+<span class="c1"># Pegando média de tempo das corridas</span>
+<span class="n">media_temp_corridas</span> <span class="o">=</span> <span class="n">df_pandas_fim_semana</span><span class="p">[</span><span class="s1">&#39;temp_corrida&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tempo médio das corridas nos dias de sábado e domingo: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">media_temp_corridas</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/usr/local/lib/python3.6/dist-packages/pyarrow/__init__.py:157: UserWarning: pyarrow.open_stream is deprecated, please use pyarrow.ipc.open_stream
+  warnings.warn(&#34;pyarrow.open_stream is deprecated, please use &#34;
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+Tempo médio das corridas nos dias de sábado e domingo: 0 days 00:08:44.787484
+</pre>
+</div>
 </div>
 
 </div>
